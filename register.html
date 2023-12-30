@@ -12,10 +12,8 @@
       rel="stylesheet"
       href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
-    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/pages/layout.css" />
-    <link rel="stylesheet" href="./assets/css/pages/contact.css" />
+    <link rel="stylesheet" href="./assets/css/pages/register.css" />
     <title>Document</title>
   </head>
   <body>
@@ -373,162 +371,76 @@
 
     <!-- main starts -->
     <main>
-      <!-- Contact section starts -->
-      <section id="contact-section">
+      <section id="register-section">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="contact-form">
-                <h3>Send Us a Message</h3>
-
+          <div class="row justify-content-center align-items-center">
+            <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-3 mb-lg-0">
+              <div class="register-form">
+                <h4>Register</h4>
                 <form action="">
                   <div class="row">
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label for="">Your Name </label>
-                        <input type="text" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label for="">Your Email </label>
-                        <input type="text" class="form-control" />
-                      </div>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <label for="">Your Message </label>
-                        <textarea
+                    <div class="col-lg-6 mb-20">
+                      <div class="name">
+                        <label for="">Name</label>
+                        <input
                           class="form-control"
-                          name=""
-                          id=""
-                          cols="30"
-                          rows="5"
-                        ></textarea>
+                          type="text"
+                          placeholder="Enter your name"
+                        />
                       </div>
                     </div>
-                    <div class="col-lg-12">
-                      <div class="form-btn">
-                        <button class="btn btn-black w-100" type="submit">
-                          send
-                        </button>
+                    <div class="col-lg-6 mb-20">
+                      <div class="surname">
+                        <label for="">Surname</label>
+                        <input
+                          class="form-control"
+                          type="text"
+                          placeholder="Enter your surname"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mb-20">
+                      <div class="email">
+                        <label for="">Email</label>
+                        <input
+                          class="form-control"
+                          type="email"
+                          placeholder="Enter your email address here"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 mb-20">
+                      <div class="password">
+                        <label for="">Password</label>
+                        <input
+                          class="form-control"
+                          type="password"
+                          placeholder="Enter your password"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 mb-20">
+                      <div class="conf-password">
+                        <label for="">Confirm Password</label>
+                        <input
+                          class="form-control"
+                          type="password"
+                          placeholder="Repeat your password "
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="reg-btn">
+                        <button class="btn">Register</button>
                       </div>
                     </div>
                   </div>
                 </form>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="google-map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.428490503048!2d49.8513705759025!3d40.37719495804488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1sen!2saz!4v1703946903734!5m2!1sen!2saz"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
           </div>
         </div>
       </section>
-      <!-- contact section ends -->
-
-      <!-- contact info section starts -->
-      <section id="contact-info-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-6 col-12 mb-3">
-              <div class="contact-info">
-                <span class="icon icon-phone">
-                  <i class="fa fa-phone"></i>
-                </span>
-                <div class="content">
-                  <h3>Contact By Phone</h3>
-                  <p>1800.123.4569</p>
-                  <p>1800.123.4569</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12 mb-3">
-              <div class="contact-info">
-                <span class="icon">
-                  <i class="fa fa-envelope"></i>
-                </span>
-                <div class="content">
-                  <h3>Contact By Email</h3>
-                  <p>contact@yoursite.com</p>
-                  <p>info@lawyersattorneys.com</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12 mb-3">
-              <div class="contact-info">
-                <span class="icon">
-                  <i class="fa fa-map-marker"></i>
-                </span>
-                <div class="content">
-                  <h3>Come To See Us</h3>
-                  <p>7/135 Saint St. London</p>
-                  <p>1130/5 Louis III St. New York</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-sm-6 col-12 mb-3">
-              <div class="contact-info">
-                <span class="icon">
-                  <i class="fa fa-users"></i>
-                </span>
-                <div class="content">
-                  <h3>Pustok Social</h3>
-                  <ul class="social-btns">
-                    <li>
-                      <a href="">
-                        <i class="ion ion-social-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i class="ion ion-social-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i class="ion ion-social-google"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <i class="ion ion-social-youtube"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- contct info section ends -->
-
-      <!-- Partners section starts -->
-      <section id="partners-section">
-        <div class="container">
-          <hr />
-          <div class="brand-slider">
-            <img src="./assets/images/brand-1.webp" alt="" />
-            <img src="./assets/images/brand-2.webp" alt="" />
-            <img src="./assets/images/brand-3.webp" alt="" />
-            <img src="./assets/images/brand-4.webp" alt="" />
-            <img src="./assets/images/brand-5.webp" alt="" />
-            <img src="./assets/images/brand-6.webp" alt="" />
-          </div>
-          <hr />
-        </div>
-      </section>
-      <!-- partners section end -->
     </main>
     <!-- main ends -->
 
@@ -690,10 +602,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./assets/slick-1.8.1/slick/slick.js"></script>
+
     <script src="./assets/js/layout.js"></script>
-    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/register.js"></script>
     <!-- scripts ends -->
   </body>
 </html>

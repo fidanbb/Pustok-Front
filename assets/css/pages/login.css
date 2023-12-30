@@ -1,0 +1,67 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+
+main #login-section {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+main #login-section .login-form {
+  border: 1px solid #e3e3e3;
+  padding: 45px 20px 35px 20px;
+  text-align: left;
+  border-radius: 5px;
+}
+main #login-section .login-form h4 {
+  text-align: center;
+  font-size: 27px;
+  line-height: 23px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+main #login-section .login-form label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+main #login-section .login-form input {
+  height: 40px;
+  color: #7b7b7b;
+  font-size: 13px;
+  margin-bottom: 30px;
+  box-shadow: none;
+  border: 2px solid #eeeeee;
+}
+main #login-section .login-form input:focus {
+  border-color: #62ab00;
+  outline: none;
+}
+main #login-section .login-form button {
+  text-transform: capitalize;
+  font-size: 15px;
+  background: transparent;
+  border: 2px solid #ececec;
+  color: #333;
+  padding: 0 50px;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  min-height: 50px;
+  transition: all 0.5s;
+}
+main #login-section .login-form button:hover {
+  background-color: #62ab00;
+  color: #fff;
+}/*# sourceMappingURL=login.css.map */
