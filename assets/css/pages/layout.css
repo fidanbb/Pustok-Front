@@ -602,6 +602,11 @@ footer #footer-up .footer-elem .footer-list li {
 footer #footer-up .footer-elem .footer-list li a {
   font-size: 15px;
   color: #333333;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+footer #footer-up .footer-elem .footer-list li a:hover {
+  color: #62ab00;
 }
 footer #footer-up .footer-elem .newsletter-form input {
   height: 52px;

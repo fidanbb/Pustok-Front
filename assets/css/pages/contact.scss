@@ -1,0 +1,205 @@
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+
+main {
+  #contact-section {
+    margin-top: 60px;
+    .contact-form {
+      h3 {
+        color: #555555;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+
+        label {
+          color: #555555;
+          font-size: 14px;
+        }
+
+        input {
+          background: transparent;
+          border: 2px solid #eeeeee;
+          font-size: 14px;
+          color: #252525;
+          height: 45px;
+          box-shadow: none;
+
+          &:focus {
+            border-color: #62ab00;
+            outline: none;
+          }
+        }
+
+        textarea {
+          background: transparent;
+          border: 2px solid #eeeeee;
+          font-size: 14px;
+          color: #252525;
+          box-shadow: none;
+
+          &:focus {
+            border-color: #62ab00;
+            outline: none;
+          }
+        }
+      }
+
+      .form-btn {
+        margin-top: 30px;
+        button {
+          height: 50px;
+          padding: 0 40px;
+          align-items: center;
+          color: #fff;
+          background-color: #333;
+          font-size: 13px;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: all 0.5s;
+          &:hover {
+            background-color: #62ab00;
+          }
+        }
+      }
+    }
+  }
+
+  #contact-info-section {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    .contact-info {
+      text-align: center;
+      .icon {
+        width: 88px;
+        height: 88px;
+        border: 1px solid #62ab00;
+        color: #62ab00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        i {
+          font-size: 30px;
+        }
+      }
+      .icon-phone {
+        i {
+          transform: rotate(-90deg);
+        }
+      }
+      .content {
+        margin-top: 20px;
+        h3 {
+          font-weight: 600;
+          color: #333;
+          font-size: 18px;
+        }
+        p {
+          line-height: 1.75;
+
+          &:nth-of-type(1) {
+            margin-bottom: 0;
+          }
+        }
+        .social-btns {
+          margin: 0 0;
+          padding-left: 0;
+          li {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            z-index: 1;
+            transition: all 0.5s ease-in-out;
+            margin-right: 7px;
+            margin-top: 10px;
+            &:nth-of-type(1) {
+              background-color: #2b5893;
+            }
+            &:nth-of-type(2) {
+              background-color: #1ea8d4;
+            }
+            &:nth-of-type(3) {
+              background-color: #f96c4b;
+            }
+            &:nth-of-type(4) {
+              background-color: #de0f0f;
+            }
+
+            &:hover {
+              background-color: #000;
+            }
+            a {
+              i {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #partners-section {
+    .brand-slider {
+      img {
+        opacity: 0.8;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contact-section {
+    .google-map {
+      margin-top: 50px;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #contact-section {
+    .google-map {
+      margin-top: 50px;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #contact-section {
+    .google-map {
+      margin-top: 50px;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
