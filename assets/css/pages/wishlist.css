@@ -1,0 +1,279 @@
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+
+main #wishlist .tiny-header {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+main #wishlist .tiny-header h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+main #wishlist .empty-wishlist p {
+  font-size: 16px;
+  color: #000;
+}
+main #wishlist .empty-wishlist a {
+  width: auto;
+  text-align: center;
+  background-color: #62ab00;
+  border-color: #62ab00;
+  color: #fff;
+  white-space: pre;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9375rem;
+  height: 42px;
+  text-decoration: none;
+}
+main #wishlist .wishlist-table table {
+  margin-bottom: 27px;
+  width: 100%;
+}
+main #wishlist .wishlist-table table thead th {
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  padding: 1em;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+main #wishlist .wishlist-table table thead .product-remove {
+  width: 35px;
+  text-align: center;
+  padding: 1em 0.5em;
+}
+main #wishlist .wishlist-table table thead .product-image {
+  min-width: 100px;
+  max-width: 100%;
+  width: 100px;
+}
+main #wishlist .wishlist-table table tbody td {
+  padding: 1em;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+main #wishlist .wishlist-table table tbody .product-remove span {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  color: #000;
+  font-size: 15px;
+  padding-left: 1px;
+  transition: all 0.5s;
+}
+main #wishlist .wishlist-table table tbody .product-remove span:hover {
+  color: #ee403d;
+}
+main #wishlist .wishlist-table table tbody .product-image {
+  width: 100px;
+}
+main #wishlist .wishlist-table table tbody .product-image img {
+  width: 60px;
+}
+main #wishlist .wishlist-table table tbody .product-name a {
+  color: #000;
+}
+main #wishlist .wishlist-table table tbody .product-status i {
+  margin-right: 5px;
+}
+main #wishlist .wishlist-table table tbody .product-action {
+  width: 135px;
+}
+main #wishlist .wishlist-table table button {
+  cursor: pointer;
+  width: auto;
+  text-align: center;
+  background-color: #62ab00;
+  border-color: #62ab00;
+  color: #fff;
+  white-space: pre;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9375rem;
+  height: 42px;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+main #wishlist .wishlist-table table button:hover {
+  background-color: #000;
+}
+main #mobile-wishlist .tiny-header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+main #mobile-wishlist .tiny-header h2 {
+  font-size: 28px;
+  font-weight: 400;
+}
+main #mobile-wishlist .empty-wishlist p {
+  font-size: 16px;
+  color: #000;
+}
+main #mobile-wishlist .empty-wishlist a {
+  width: auto;
+  text-align: center;
+  background-color: #62ab00;
+  border-color: #62ab00;
+  color: #fff;
+  white-space: pre;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9375rem;
+  height: 42px;
+  text-decoration: none;
+}
+main #mobile-wishlist .wishlist-table .product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+main #mobile-wishlist .wishlist-table .product .product-image img {
+  width: 100%;
+  vertical-align: middle;
+}
+main #mobile-wishlist .wishlist-table .product .product-detail {
+  margin-top: 30px;
+}
+main #mobile-wishlist .wishlist-table .product .product-detail .product-name h3 {
+  font-size: 20px;
+}
+main #mobile-wishlist .wishlist-table .product .product-detail .product-name h3 a {
+  color: #000;
+}
+main #mobile-wishlist .wishlist-table .product .product-detail .product-author p {
+  font-size: 20px;
+  color: #000;
+}
+main #mobile-wishlist .wishlist-table .product .product-detail .product-price p {
+  color: #333;
+  font-size: 20px;
+}
+main #mobile-wishlist .wishlist-table .product .product-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+}
+main #mobile-wishlist .wishlist-table .product .product-btns i {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+main #mobile-wishlist .wishlist-table .product .product-btns i:hover {
+  color: #ee403d;
+}
+main #mobile-wishlist .wishlist-table .product .product-btns button {
+  cursor: pointer;
+  width: auto;
+  text-align: center;
+  background-color: #62ab00;
+  border-color: #62ab00;
+  color: #fff;
+  white-space: pre;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9375rem;
+  height: 35px;
+  transition: all 0.5s;
+}
+main #mobile-wishlist .wishlist-table .product .product-btns button:hover {
+  background-color: #000;
+}
+
+@media only screen and (max-width: 500px) {
+  #wishlist {
+    display: none;
+  }
+  #mobile-wishlist {
+    display: block;
+  }
+  #mobile-wishlist .product {
+    padding-top: 20px !important;
+  }
+  #mobile-wishlist .product .product-detail {
+    margin-top: 0px !important;
+  }
+  #mobile-wishlist .product .product-detail .product-name h3 {
+    font-size: 15px !important;
+  }
+  #mobile-wishlist .product .product-detail .product-author p {
+    font-size: 15px !important;
+    margin-bottom: 5px !important;
+  }
+  #mobile-wishlist .product .product-detail .product-price p {
+    font-size: 15px !important;
+  }
+  #mobile-wishlist .product .product-btns {
+    margin-top: 0px !important;
+  }
+  #mobile-wishlist .product .product-btns i {
+    font-size: 15px !important;
+  }
+  #mobile-wishlist .product .product-btns button {
+    font-size: 13px !important;
+    padding: 4px 7px !important;
+    width: 70px !important;
+  }
+}
+@media only screen and (min-width: 500px) {
+  #wishlist {
+    display: none;
+  }
+  #mobile-wishlist {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #wishlist {
+    display: block;
+  }
+  #mobile-wishlist {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #wishlist {
+    display: block;
+  }
+  #mobile-wishlist {
+    display: none;
+  }
+}/*# sourceMappingURL=wishlist.css.map */

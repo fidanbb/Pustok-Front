@@ -16,7 +16,7 @@ main #login-section {
 }
 main #login-section .login-form {
   border: 1px solid #e3e3e3;
-  padding: 45px 20px 35px 20px;
+  padding: 45px 20px 30px 20px;
   text-align: left;
   border-radius: 5px;
 }
@@ -40,7 +40,6 @@ main #login-section .login-form input {
   height: 40px;
   color: #7b7b7b;
   font-size: 13px;
-  margin-bottom: 30px;
   box-shadow: none;
   border: 2px solid #eeeeee;
 }
@@ -49,6 +48,7 @@ main #login-section .login-form input:focus {
   outline: none;
 }
 main #login-section .login-form button {
+  margin-top: 10px;
   text-transform: capitalize;
   font-size: 15px;
   background: transparent;
@@ -64,4 +64,61 @@ main #login-section .login-form button {
 main #login-section .login-form button:hover {
   background-color: #62ab00;
   color: #fff;
+}
+main #login-section .login-form .password {
+  position: relative;
+}
+main #login-section .login-form .password i {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  transition: all 0.5s;
+}
+main #login-section .login-form .password i:hover {
+  color: #62ab00;
+}
+main #login-section .login-form .login-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #login-section .login-form .login-items .remember {
+  margin-left: 20px;
+}
+main #login-section .login-form .login-items .remember label {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+main #login-section .login-form .login-items .remember input {
+  cursor: pointer;
+  margin-top: 0 !important;
+  height: 20px !important;
+}
+main #login-section .login-form .login-items .remember input:checked {
+  background-color: #62ab00 !important;
+}
+main #login-section .login-form .login-items .forgot-password a {
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+main #login-section .login-form .login-items .forgot-password a:hover {
+  color: #62ab00;
+}
+main #login-section .login-form .account p {
+  color: #333;
+  font-weight: 500;
+  font-size: 13px;
+}
+main #login-section .login-form .account p a {
+  color: #333;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+main #login-section .login-form .account p a:hover {
+  color: #62ab00;
 }/*# sourceMappingURL=login.css.map */

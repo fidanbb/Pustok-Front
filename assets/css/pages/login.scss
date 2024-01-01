@@ -16,7 +16,7 @@ main {
 
     .login-form {
       border: 1px solid #e3e3e3;
-      padding: 45px 20px 35px 20px;
+      padding: 45px 20px 30px 20px;
       text-align: left;
       border-radius: 5px;
       h4 {
@@ -40,7 +40,7 @@ main {
         height: 40px;
         color: #7b7b7b;
         font-size: 13px;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
         box-shadow: none;
         border: 2px solid #eeeeee;
 
@@ -51,6 +51,7 @@ main {
       }
 
       button {
+        margin-top: 10px;
         text-transform: capitalize;
         font-size: 15px;
         background: transparent;
@@ -65,6 +66,74 @@ main {
         &:hover {
           background-color: #62ab00;
           color: #fff;
+        }
+      }
+
+      .password {
+        position: relative;
+        i {
+          position: absolute;
+          top: 40px;
+          right: 20px;
+          transition: all 0.5s;
+          &:hover {
+            color: #62ab00;
+          }
+        }
+      }
+      .login-items {
+        // margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .remember {
+          margin-left: 20px;
+          label {
+            margin-bottom: 0;
+            cursor: pointer;
+          }
+          input {
+            cursor: pointer;
+            margin-top: 0 !important;
+            height: 20px !important;
+            &:checked {
+              background-color: #62ab00 !important;
+            }
+          }
+        }
+
+        .forgot-password {
+          a {
+            color: #333;
+            font-weight: 600;
+            font-size: 13px;
+            text-decoration: none;
+            transition: all 0.5s;
+
+            &:hover {
+              color: #62ab00;
+            }
+          }
+        }
+      }
+
+      .account {
+        p {
+          color: #333;
+          font-weight: 500;
+          font-size: 13px;
+          a {
+            color: #333;
+            font-weight: 600;
+            font-size: 13px;
+            text-decoration: none;
+            transition: all 0.5s;
+
+            &:hover {
+              color: #62ab00;
+            }
+          }
         }
       }
     }

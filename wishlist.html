@@ -13,7 +13,7 @@
       href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
     <link rel="stylesheet" href="./assets/css/pages/layout.css" />
-    <link rel="stylesheet" href="./assets/css/pages/register.css" />
+    <link rel="stylesheet" href="./assets/css/pages/wishlist.css" />
     <title>Document</title>
   </head>
   <body>
@@ -371,85 +371,138 @@
 
     <!-- main starts -->
     <main>
-      <section id="register-section">
+      <!-- Wishlist Table Section Starts -->
+      <section id="wishlist">
         <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6 mb-3 mb-lg-0">
-              <div class="register-form">
-                <h4>Register</h4>
-                <form action="">
-                  <div class="row">
-                    <div class="col-lg-6 mb-20">
-                      <div class="name">
-                        <label for="">Name</label>
-                        <input
-                          class="form-control"
-                          type="text"
-                          placeholder="Enter your name"
-                        />
-                      </div>
+          <div class="tiny-header">
+            <h2>Your wishlist</h2>
+          </div>
+          <div class="empty-wishlist d-none">
+            <p>Your Wishlist is currently empty.</p>
+            <a href="./shop.html">Return to Shop</a>
+          </div>
+          <div style="overflow-x: auto" class="wishlist-table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="product-remove"></th>
+                  <th class="product-image">Image</th>
+                  <th class="product-name">Product Name</th>
+                  <th class="product-price">Unit Price</th>
+                  <th class="prdocut-date">Date Added</th>
+                  <th class="product-status">Stock Status</th>
+                  <th class="product-action"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="product-remove">
+                    <span data-id="1">x</span>
+                  </td>
+                  <td class="product-image">
+                    <a href="./productdetail.html">
+                      <img src="./assets/images/product-1.webp" alt="" />
+                    </a>
+                  </td>
+                  <td class="product-name">
+                    <a href="./productdetail">Rinosin Glasses</a>
+                  </td>
+                  <td class="product-price"><span>$</span><span>50</span></td>
+                  <td class="prdocut-date">23/12/2022</td>
+                  <td class="product-status">
+                    <i class="fa-solid fa-check"></i>
+                    <span>In Stock</span>
+                  </td>
+                  <td class="product-action">
+                    <button>Add to Cart</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Wishlist Table Section Ends -->
+
+      <!-- Mobile Wishlist Starts -->
+
+      <section id="mobile-wishlist">
+        <div class="container">
+          <div class="tiny-header">
+            <h2>Your wishlist</h2>
+          </div>
+          <div class="empty-wishlist d-none">
+            <p>Your Wishlist is currently empty.</p>
+            <a href="./shop.html">Return to Shop</a>
+          </div>
+          <div class="wishlist-table">
+            <div class="product">
+              <div class="row">
+                <div class="col-4">
+                  <div class="product-image">
+                    <a href="productdetail.html">
+                      <img src="./assets/images/product-2.webp" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="product-detail">
+                    <div class="product-name">
+                      <h3><a href="./productdetail.html">Martin Eden</a></h3>
                     </div>
-                    <div class="col-lg-6 mb-20">
-                      <div class="surname">
-                        <label for="">Surname</label>
-                        <input
-                          class="form-control"
-                          type="text"
-                          placeholder="Enter your surname"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-12 mb-20">
-                      <div class="email">
-                        <label for="">Email</label>
-                        <input
-                          class="form-control"
-                          type="email"
-                          placeholder="Enter your email address here"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-20">
-                      <div class="password">
-                        <label for="">Password</label>
-                        <input
-                          class="form-control"
-                          type="password"
-                          placeholder="Enter your password"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6 mb-20">
-                      <div class="conf-password">
-                        <label for="">Confirm Password</label>
-                        <input
-                          class="form-control"
-                          type="password"
-                          placeholder="Repeat your password "
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="reg-btn">
-                        <button class="btn">Register</button>
-                      </div>
+                    <div class="product-author">
+                      <p>Jack London</p>
                     </div>
 
-                    <div class="col-lg-12 mb-3">
-                      <div class="account">
-                        <p>
-                          Already have an account?
-                          <a href="login.html">Login</a>
-                        </p>
-                      </div>
+                    <div class="product-price">
+                      <p>$50</p>
                     </div>
                   </div>
-                </form>
+                </div>
+                <div class="col-3">
+                  <div class="product-btns">
+                    <i class="fa-regular fa-trash-can"></i>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="row">
+                <div class="col-4">
+                  <div class="product-image">
+                    <a href="productdetail.html">
+                      <img src="./assets/images/product-1.webp" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="product-detail">
+                    <div class="product-name">
+                      <h3><a href="./productdetail.html">Martin Eden</a></h3>
+                    </div>
+                    <div class="product-author">
+                      <p>Jack London</p>
+                    </div>
+
+                    <div class="product-price">
+                      <p>$50</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="product-btns">
+                    <i class="fa-regular fa-trash-can"></i>
+
+                    <button>Add to cart</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Mobile Wishlist Ends -->
     </main>
     <!-- main ends -->
 
@@ -613,7 +666,7 @@
     ></script>
 
     <script src="./assets/js/layout.js"></script>
-    <script src="./assets/js/register.js"></script>
+    <script src="./assets/js/wishlist.js"></script>
     <!-- scripts ends -->
   </body>
 </html>
