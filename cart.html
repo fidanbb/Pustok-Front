@@ -13,7 +13,7 @@
       href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
     <link rel="stylesheet" href="./assets/css/pages/layout.css" />
-    <link rel="stylesheet" href="./assets/css/pages/wishlist.css" />
+    <link rel="stylesheet" href="./assets/css/pages/cart.css" />
     <title>Document</title>
   </head>
   <body>
@@ -371,145 +371,161 @@
 
     <!-- main starts -->
     <main>
-      <!-- Wishlist Table Section Starts -->
-      <section id="wishlist">
+      <section id="basket" class="">
         <div class="container">
-          <div class="tiny-header">
-            <h2>Your wishlist</h2>
-          </div>
-          <div class="empty-wishlist d-none">
-            <!-- <p>Your Wishlist is currently empty.</p> -->
-            <div class="alert alert-success" role="alert">
-              Your Wishlist is currently empty.
-            </div>
-            <a href="./shop.html">Return to Shop</a>
-          </div>
-          <div style="overflow-x: auto" class="wishlist-table">
-            <table>
-              <thead>
-                <tr>
-                  <th class="product-remove"></th>
-                  <th class="product-image">Image</th>
-                  <th class="product-name">Product Name</th>
-                  <th class="product-price">Unit Price</th>
-                  <th class="prdocut-date">Date Added</th>
-                  <th class="product-status">Stock Status</th>
-                  <th class="product-action"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="product-remove">
-                    <span data-id="1">x</span>
-                  </td>
-                  <td class="product-image">
-                    <a href="./productdetail.html">
-                      <img src="./assets/images/product-1.webp" alt="" />
-                    </a>
-                  </td>
-                  <td class="product-name">
-                    <a href="./productdetail">Rinosin Glasses</a>
-                  </td>
-                  <td class="product-price"><span>$</span><span>50</span></td>
-                  <td class="prdocut-date">23/12/2022</td>
-                  <td class="product-status">
-                    <i class="fa-solid fa-check"></i>
-                    <span>In Stock</span>
-                  </td>
-                  <td class="product-action">
-                    <button>Add to Cart</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-      <!-- Wishlist Table Section Ends -->
-
-      <!-- Mobile Wishlist Starts -->
-
-      <section id="mobile-wishlist">
-        <div class="container">
-          <div class="tiny-header">
-            <h2>Your wishlist</h2>
-          </div>
-          <div class="empty-wishlist d-none">
-            <!-- <p>Your Wishlist is currently empty.</p> -->
-            <div class="alert alert-success" role="alert">
-              Your Wishlist is currently empty.
-            </div>
-            <a href="./shop.html">Return to Shop</a>
-          </div>
-          <div class="wishlist-table">
-            <div class="product">
-              <div class="row">
-                <div class="col-4">
-                  <div class="product-image">
-                    <a href="productdetail.html">
-                      <img src="./assets/images/product-2.webp" alt="" />
-                    </a>
-                  </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <div class="free-shipping">
+                <div class="free-shipping-notice">
+                  Add
+                  <span>$</span><span class="price-amount">0</span>
+                  to cart and get free shipping!
                 </div>
-                <div class="col-5">
-                  <div class="product-detail">
-                    <div class="product-name">
-                      <h3><a href="./productdetail.html">Martin Eden</a></h3>
-                    </div>
-                    <div class="product-status">
-                      <i class="fa-solid fa-check"></i>
-                      <span>In Stock</span>
-                    </div>
 
-                    <div class="product-price">
-                      <p>$50</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div class="product-btns">
-                    <i class="fa-regular fa-trash-can"></i>
-                    <button>Add to cart</button>
+                <div class="free-shipping-progressbar">
+                  <div class="progress">
+                    <div class="progress-done" data-done="0"></div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="product">
-              <div class="row">
-                <div class="col-4">
-                  <div class="product-image">
-                    <a href="productdetail.html">
-                      <img src="./assets/images/product-1.webp" alt="" />
-                    </a>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="product-detail">
-                    <div class="product-name">
-                      <h3><a href="./productdetail.html">Martin Eden</a></h3>
-                    </div>
-                    <div class="product-status">
-                      <i class="fa-solid fa-check"></i>
-                      <span>In Stock</span>
-                    </div>
+              <div class="basket-table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="product-remove"></th>
+                      <th class="product-image"></th>
+                      <th class="product-name">Product</th>
+                      <th class="product-price">Price</th>
+                      <th class="product-quatity">Quantity</th>
+                      <th class="product-subtotal">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="product-remove">
+                        <i data-id="1" class="fa-solid fa-xmark"></i>
+                      </td>
+                      <td class="product-image">
+                        <a href="./productdetail.html">
+                          <img src="./assets/images/product-1.webp" alt="" />
+                        </a>
+                      </td>
+                      <td class="product-name">
+                        <a href="./productdetail.html">Martin Eden</a>
+                      </td>
+                      <td class="product-price">
+                        <span>$<span>50</span> </span>
+                      </td>
+                      <td class="product-quantity">
+                        <div class="quantity">
+                          <i data-id="1" class="fa-solid fa-minus"></i>
+                          <span>1</span>
+                          <i data-id="1" class="fa-solid fa-plus"></i>
+                        </div>
+                      </td>
+                      <td class="product-subtotal">
+                        <span>$</span><span>50</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="product-remove">
+                        <i data-id="1" class="fa-solid fa-xmark"></i>
+                      </td>
+                      <td class="product-image">
+                        <a href="./productdetail.html">
+                          <img src="./assets/images/product-2.webp" alt="" />
+                        </a>
+                      </td>
+                      <td class="product-name">
+                        <a href="./productdetail.html">Martin Eden</a>
+                      </td>
+                      <td class="product-price">
+                        <span>$<span>50</span> </span>
+                      </td>
+                      <td class="product-quantity">
+                        <div class="quantity">
+                          <i data-id="1" class="fa-solid fa-minus"></i>
+                          <span>1</span>
+                          <i data-id="1" class="fa-solid fa-plus"></i>
+                        </div>
+                      </td>
+                      <td class="product-subtotal">
+                        <span>$</span><span>50</span>
+                      </td>
+                    </tr>
+                  </tbody>
 
-                    <div class="product-price">
-                      <p>$50</p>
+                  <tfoot>
+                    <tr>
+                      <td colspan="100">
+                        <div class="actions">
+                          <div class="update-cart">
+                            <a href="./shop.html">Continue Shopping</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <div class="cart-collaterals">
+                <div class="cart-totals">
+                  <h2>Cart totals</h2>
+                  <div class="subtotal">
+                    <p>Subtotal</p>
+                    <span>$<span class="price">0</span></span>
+                  </div>
+                  <div class="shipping">
+                    <p>Shipping</p>
+                    <div class="shipping-details">
+                      <div class="shipping-option">
+                        <input
+                          type="radio"
+                          id="flat-rate"
+                          name="shippind-method"
+                          checked
+                        />
+                        <label class="shipping-1" for="flat-rate"
+                          >Flat rate:
+                          <span>$15.00</span>
+                        </label>
+                      </div>
+                      <div class="shipping-option">
+                        <input
+                          type="radio"
+                          id="local-pickup"
+                          name="shippind-method"
+                        />
+                        <label for="local-pickup">Local Pickup </label>
+                      </div>
+                      <p>Shipping to <span>AL</span></p>
+                      <a href="">Change Address</a>
                     </div>
                   </div>
-                </div>
-                <div class="col-3">
-                  <div class="product-btns">
-                    <i class="fa-regular fa-trash-can"></i>
-                    <button>Add to cart</button>
+
+                  <div class="total">
+                    <p>Total</p>
+                    <h3>$<span class="last-price">0</span></h3>
                   </div>
+                  <a class="checkout" href=""> Proceed to checkout </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Mobile Wishlist Ends -->
+
+      <section id="empty-basket" class="d-none">
+        <div class="container">
+          <!-- <p>Your Cart is currently empty.</p> -->
+          <div class="alert alert-success" role="alert">
+            Your Wishlist is currently empty.
+          </div>
+          <a href="./shop.html">Return to Shop</a>
+        </div>
+      </section>
     </main>
     <!-- main ends -->
 
@@ -673,7 +689,7 @@
     ></script>
 
     <script src="./assets/js/layout.js"></script>
-    <script src="./assets/js/wishlist.js"></script>
+    <script src="./assets/js/cart.js"></script>
     <!-- scripts ends -->
   </body>
 </html>

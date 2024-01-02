@@ -21,6 +21,7 @@ main {
     }
 
     .empty-wishlist {
+      margin-top: 40px;
       p {
         font-size: 16px;
         color: #000;
@@ -164,6 +165,7 @@ main {
     }
 
     .empty-wishlist {
+      margin-top: 40px;
       p {
         font-size: 16px;
         color: #000;
@@ -212,10 +214,12 @@ main {
             }
           }
 
-          .product-author {
-            p {
-              font-size: 20px;
-              color: #000;
+          .product-status {
+            i {
+              margin-right: 5px;
+            }
+            span {
+              font-size: 18px;
             }
           }
 
@@ -285,17 +289,19 @@ main {
       padding-top: 20px !important;
 
       .product-detail {
-        margin-top: 0px !important;
+        margin-top: 10px !important;
         .product-name {
           h3 {
             font-size: 15px !important;
           }
         }
 
-        .product-author {
-          p {
+        .product-status {
+          i {
+            font-size: 13px !important;
+          }
+          span {
             font-size: 15px !important;
-            margin-bottom: 5px !important;
           }
         }
 
@@ -307,7 +313,7 @@ main {
       }
 
       .product-btns {
-        margin-top: 0px !important;
+        margin-top: 10px !important;
 
         i {
           font-size: 15px !important;

@@ -18,6 +18,9 @@ main #wishlist .tiny-header h2 {
   font-size: 32px;
   font-weight: 400;
 }
+main #wishlist .empty-wishlist {
+  margin-top: 40px;
+}
 main #wishlist .empty-wishlist p {
   font-size: 16px;
   color: #000;
@@ -130,6 +133,9 @@ main #mobile-wishlist .tiny-header h2 {
   font-size: 28px;
   font-weight: 400;
 }
+main #mobile-wishlist .empty-wishlist {
+  margin-top: 40px;
+}
 main #mobile-wishlist .empty-wishlist p {
   font-size: 16px;
   color: #000;
@@ -171,9 +177,11 @@ main #mobile-wishlist .wishlist-table .product .product-detail .product-name h3 
 main #mobile-wishlist .wishlist-table .product .product-detail .product-name h3 a {
   color: #000;
 }
-main #mobile-wishlist .wishlist-table .product .product-detail .product-author p {
-  font-size: 20px;
-  color: #000;
+main #mobile-wishlist .wishlist-table .product .product-detail .product-status i {
+  margin-right: 5px;
+}
+main #mobile-wishlist .wishlist-table .product .product-detail .product-status span {
+  font-size: 18px;
 }
 main #mobile-wishlist .wishlist-table .product .product-detail .product-price p {
   color: #333;
@@ -229,20 +237,22 @@ main #mobile-wishlist .wishlist-table .product .product-btns button:hover {
     padding-top: 20px !important;
   }
   #mobile-wishlist .product .product-detail {
-    margin-top: 0px !important;
+    margin-top: 10px !important;
   }
   #mobile-wishlist .product .product-detail .product-name h3 {
     font-size: 15px !important;
   }
-  #mobile-wishlist .product .product-detail .product-author p {
+  #mobile-wishlist .product .product-detail .product-status i {
+    font-size: 13px !important;
+  }
+  #mobile-wishlist .product .product-detail .product-status span {
     font-size: 15px !important;
-    margin-bottom: 5px !important;
   }
   #mobile-wishlist .product .product-detail .product-price p {
     font-size: 15px !important;
   }
   #mobile-wishlist .product .product-btns {
-    margin-top: 0px !important;
+    margin-top: 10px !important;
   }
   #mobile-wishlist .product .product-btns i {
     font-size: 15px !important;
