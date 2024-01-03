@@ -168,7 +168,7 @@ main {
               position: relative;
               text-transform: capitalize;
               color: #333;
-
+              transition: all 0.5s;
               &::before {
                 content: "\f105";
                 font-family: "Fontawesome";
@@ -179,6 +179,9 @@ main {
                 display: block;
                 left: -1.25rem;
                 top: 0;
+                color: #63ab00;
+              }
+              &:hover {
                 color: #63ab00;
               }
             }

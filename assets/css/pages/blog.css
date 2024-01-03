@@ -143,6 +143,7 @@ main #blog-section .left-side-blog .categories-widget ul li a {
   position: relative;
   text-transform: capitalize;
   color: #333;
+  transition: all 0.5s;
 }
 main #blog-section .left-side-blog .categories-widget ul li a::before {
   content: "\f105";
@@ -154,6 +155,9 @@ main #blog-section .left-side-blog .categories-widget ul li a::before {
   display: block;
   left: -1.25rem;
   top: 0;
+  color: #63ab00;
+}
+main #blog-section .left-side-blog .categories-widget ul li a:hover {
   color: #63ab00;
 }
 main #blog-section .left-side-blog .recent-posts {

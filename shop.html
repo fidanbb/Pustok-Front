@@ -12,8 +12,9 @@
       rel="stylesheet"
       href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
+
     <link rel="stylesheet" href="./assets/css/pages/layout.css" />
-    <link rel="stylesheet" href="./assets/css/pages/blogdetail.css" />
+    <link rel="stylesheet" href="./assets/css/pages/shop.css" />
     <title>Document</title>
   </head>
   <body>
@@ -371,215 +372,466 @@
 
     <!-- main starts -->
     <main>
-      <!-- Blog Detail Section Starts -->
-      <section id="blog-detail-section">
+      <!-- Shop Section Starts -->
+      <section id="shop-section">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mb-4 mb-lg-0">
-              <div class="blog-post">
-                <div class="blog-image">
-                  <img src="./assets/images/blog-grid-1.webp" alt="" />
-                </div>
-                <div class="blog-content">
-                  <div class="blog-header">
-                    <h3 class="blog-title">
-                      How BLOG TITLE Made Me A Better Salesperson
-                    </h3>
-                    <div class="post-detail">
-                      <span class="date">
-                        <i class="fa-regular fa-calendar"></i>
-                        7 March, 2022
-                      </span>
-                      <span class="author">
-                        <i class="fa-regular fa-user"></i>
-                        By John Doe
-                      </span>
-                    </div>
-                  </div>
-                  <article class="blog-desc">
-                    <p>
-                      Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras
-                      pretium arcu ex. Aenean posuere libero eu augue
-                      condimentum rhoncus. Praesent ornare tortor ac ante
-                      egestas hendrerit. Aliquam et metus pharetra, bibendum
-                      massa nec, fermentum odio. Nunc id leo ultrices, mollis
-                      ligula in, finibus tortor. Mauris eu dui ut lectus
-                      fermentum eleifend. Pellentesque faucibus sem ante, non
-                      malesuada odio varius nec. Suspendisse potenti. Aenean et
-                      tempor eros, vitae sollicitudin velit. Etiam varius enim
-                      nec quam tempor, sed efficitur ex ultrices. Phasellus
-                      pretium est vel dui vestibulum condimentum. Aenean nec
-                      suscipit nibh. Phasellus nec lacus id arcu facilisis
-                      elementum. Curabitur lobortis, elit ut elementum congue,
-                      erat ex bibendum odio, nec iaculis lacus sem non lorem.
-                      Duis suscipit metus ante, sed convallis quam posuere quis.
-                      Ut tincidunt eleifend odio, ac fringilla mi vehicula nec.
-                      Nunc vitae lacus eget lectus imperdiet tempus sed in dui.
-                      Nam molestie magna at risus consectetur, placerat suscipit
-                      justo dignissim. Sed vitae fringilla enim, nec ullamcorper
-                      arcu. Suspendisse turpis ipsum, tempus in nulla eu,
-                      posuere pharetra nibh. In dignissim vitae lorem non
-                      mollis. Praesent pretium tellus in tortor viverra
-                      condimentum. Nullam dignissim facilisis nisl, accumsan
-                      placerat justo ultricies vel. Vivamus finibus mi a neque
-                      pretium, ut convallis dui lacinia. Morbi a rutrum velit.
-                      Curabitur sagittis quam quis consectetur mattis. Aenean
-                      sit amet quam vel turpis interdum sagittis et eget neque.
-                      Nunc ante quam, luctus et neque a, interdum iaculis metus.
-                      Aliquam vel ante mattis, placerat orci id, vehicula quam.
-                      Suspendisse quis eros cursus, viverra urna sed, commodo
-                      mauris. Cras diam arcu, fringilla a sem condimentum,
-                      viverra facilisis nunc. Curabitur vitae orci id nulla
-                      maximus maximus. Nunc pulvinar sollicitudin molestie.
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div class="blog-item">
-                <div class="post-tags">
-                  <strong>Tags:</strong>
-                  <a href="">Strategy</a>
-                  ,
-                  <a href="">Best Seller</a>
-                  ,
-                  <a href="">Detective</a>
-                </div>
-                <div class="social-btns">
-                  <a href="">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="">
-                    <i class="fab fa-pinterest-p"></i>
-                  </a>
-                  <a href="">
-                    <i class="fab fa-google-plus-g"></i>
-                  </a>
-                  <a href="">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="related-blogs">
+            <div class="col-lg-9 order-lg-2">
+              <div class="shop-toolbar">
                 <div class="row">
-                  <div class="col-lg-12">
-                    <h4 class="widget-title">Related Posts</h4>
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="toolbar-status">
+                      <span> Showing 1 to 9 of 14 (2 Pages) </span>
+                    </div>
                   </div>
-                  <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
-                    <div class="blog">
-                      <div class="blog-image">
-                        <a href="./blogdetail.html">
-                          <img src="./assets/images/blog-grid-1.webp" alt="" />
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="sorting-selection">
+                      <span>Sort by:</span>
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Sort By Latest</option>
+                        <option value="1">Sort By Name (A-Z)</option>
+                        <option value="2">Sort By Name (Z-A)</option>
+                        <option value="3">Sort By Avarage Rating</option>
+                        <option value="4">Sort By Price:Low To High</option>
+                        <option value="5">Sort By Price:High to Low</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="1">
+                    <div class="product-header">
+                      <a class="author" href="">Cpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >Beats EP Wired On-Ear Headphone-Black</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-4.webp" alt="" />
                         </a>
-                      </div>
-                      <div class="blog-content">
-                        <h5 class="title">
-                          <a href="./blogdetail.html">
-                            How Library Can Increase Your Profit!
+                        <div class="hover-content" data-id="1">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-5.webp" alt="" />
                           </a>
-                        </h5>
-                        <p class="desc">
-                          Pellentesque vel nibh gravida erat dddd interdum
-                          lacinia vel in lectus. Sed fermentum pulvinar.
-                        </p>
-                        <div class="blog-author-date">
-                          <span class="date">
-                            <i class="fa-regular fa-calendar"></i>
-                            7 March, 2022
-                          </span>
-                          <span class="author">
-                            <i class="fa-regular fa-user"></i>
-                            By John Doe
-                          </span>
+                          <div class="hover-btns" data-id="1">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
                         </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="blog">
-                      <div class="blog-image">
-                        <a href="./blogdetail.html">
-                          <img src="./assets/images/blog-grid-2.webp" alt="" />
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="2">
+                    <div class="product-header">
+                      <a class="author" href="">Mpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >Beats Solo3 Wireless On-Ear Headphones 2</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-3.webp" alt="" />
                         </a>
-                      </div>
-                      <div class="blog-content">
-                        <h5 class="title">
-                          <a href="./blogdetail.html">
-                            How Library Can Increase Your Profit!
+                        <div class="hover-content" data-id="2">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-2.webp" alt="" />
                           </a>
-                        </h5>
-                        <p class="desc">
-                          Pellentesque vel nibh gravida erat dddd interdum
-                          lacinia vel in lectus. Sed fermentum pulvinar.
-                        </p>
-                        <div class="blog-author-date">
-                          <span class="date">
-                            <i class="fa-regular fa-calendar"></i>
-                            7 March, 2022
-                          </span>
-                          <span class="author">
-                            <i class="fa-regular fa-user"></i>
-                            By John Doe
-                          </span>
+                          <div class="hover-btns" data-id="2">
+                            <a href="">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
                         </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="3">
+                    <div class="product-header">
+                      <a class="author" href="">Mpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >In 10 Minutes, I'll Give You The Truth About</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-7.webp" alt="" />
+                        </a>
+                        <div class="hover-content" data-id="3">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-6.webp" alt="" />
+                          </a>
+                          <div class="hover-btns" data-id="3">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="4">
+                    <div class="product-header">
+                      <a class="author" href="">Dpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >What Can You Do To Save Your BOOK</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-9.webp" alt="" />
+                        </a>
+                        <div class="hover-content" data-id="4">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-8.webp" alt="" />
+                          </a>
+                          <div class="hover-btns" data-id="4">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="5">
+                    <div class="product-header">
+                      <a class="author" href="">Dpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >What Can You Do To Save Your BOOK</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-10.webp" alt="" />
+                        </a>
+                        <div class="hover-content" data-id="5">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-11.webp" alt="" />
+                          </a>
+                          <div class="hover-btns" data-id="5">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="6">
+                    <div class="product-header">
+                      <a class="author" href="">Jpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >Rpple iPad with Retina Display MD510LL/A</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-1.webp" alt="" />
+                        </a>
+                        <div class="hover-content" data-id="6">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-12.webp" alt="" />
+                          </a>
+                          <div class="hover-btns" data-id="6">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="7">
+                    <div class="product-header">
+                      <a class="author" href="">Dpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >What Can You Do To Save Your BOOK</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-8.webp" alt="" />
+                        </a>
+                        <div class="hover-content" data-id="7">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-7.webp" alt="" />
+                          </a>
+                          <div class="hover-btns" data-id="7">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="5">
+                    <div class="product-header">
+                      <a class="author" href="">Dpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >What Can You Do To Save Your BOOK</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-4.webp" alt="" />
+                        </a>
+                        <div class="hover-content" data-id="5">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-5.webp" alt="" />
+                          </a>
+                          <div class="hover-btns" data-id="5">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                  <div class="product-card" data-id="6">
+                    <div class="product-header">
+                      <a class="author" href="">Jpple</a>
+                      <h3>
+                        <a href="productdetail.html"
+                          >Rpple iPad with Retina Display MD510LL/A</a
+                        >
+                      </h3>
+                    </div>
+                    <div class="product-card-body">
+                      <div class="card-image">
+                        <a href="productdetail.html">
+                          <img src="./assets/images/product-3.webp" alt="" />
+                        </a>
+                        <div class="hover-content" data-id="6">
+                          <a href="productdetail.html">
+                            <img src="./assets/images/product-2.webp" alt="" />
+                          </a>
+                          <div class="hover-btns" data-id="6">
+                            <a href="cart.html">
+                              <i class="fas fa-shopping-basket"></i>
+                            </a>
+                            <a href="wishlist.html">
+                              <i class="fas fa-heart"></i>
+                            </a>
+                            <a href="">
+                              <i class="fas fa-eye"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-price">
+                        <span class="price">£51.20</span>
+                        <del class="price-old">£51.20</del>
+                        <span class="price-discount">20%</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div class="post-comments">
-                <h4 class="widget-title">1 Comment</h4>
-                <div class="single-comment">
-                  <div class="comment-image">
-                    <img src="./assets/images/author-logo.webp" alt="" />
-                  </div>
-                  <div class="text">
-                    <p class="author">Michel Poe</p>
-                    <p class=".desc">
-                      Donec suscipit porta lorem eget condimentum. Morbi vitae
-                      mauris in leo venenatis varius. Aliquam nunc enim, egestas
-                      ac dui in, aliquam vulputate erat.
-                    </p>
-                    <a href="">
-                      <i class="fa fa-reply"></i>
-                      Reply
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="leave-reply">
-                <h4 class="widget-title">Leave a Reply</h4>
-                <div class="reply-form">
-                  <form action="">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name"
-                    />
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Your Email"
-                    />
-                    <textarea
-                      class="form-control"
-                      name=""
-                      id=""
-                      cols="40"
-                      rows="5"
-                      placeholder="Your Message"
-                    ></textarea>
-                    <button class="btn" type="submit">Submit</button>
-                  </form>
-                </div>
+              <div class="pagination">
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item active">
+                      <a class="page-link" href="#"
+                        >2 <span class="sr-only">(current)</span></a
+                      >
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="left-side-blog">
+            <div class="col-lg-3 mt-5 mt-lg-0">
+              <div class="left-side-shop">
+                <div class="widget filter-widget">
+                  <h4 class="widget-title">Filter by Price</h4>
+                  <div class="range-slider">
+                    <input
+                      type="range"
+                      class="min-price"
+                      value="10"
+                      min="10"
+                      max="500"
+                      step="10"
+                      style="accent-color: #d8d8d8"
+                    />
+                    <input
+                      type="range"
+                      class="max-price"
+                      value="500"
+                      min="10"
+                      max="500"
+                      step="10"
+                      style="accent-color: #d8d8d8"
+                    />
+                  </div>
+                  <div class="price-area">
+                    <div style="color: gray">
+                      <p>Price:</p>
+                    </div>
+                    <div>
+                      <p id="min-value">10</p>
+                    </div>
+
+                    <div>
+                      <p id="max-value">500</p>
+                    </div>
+                    <div class="filter-button">
+                      <button>FILTER</button>
+                    </div>
+                  </div>
+                </div>
                 <div class="widget categories-widget">
                   <h4 class="widget-title">Category</h4>
                   <ul>
@@ -617,105 +869,55 @@
                     </li>
                   </ul>
                 </div>
-                <div class="widget recent-posts">
-                  <h4 class="widget-title">Recent Posts</h4>
-                  <div class="posts">
-                    <div class="post">
-                      <div class="image">
-                        <a href="./blogdetail.html">
-                          <img src="./assets/images/blog-grid-1.webp" alt="" />
-                        </a>
-                      </div>
-                      <div class="content">
-                        <h6 class="title">
-                          <a href="./blogdetail.html">
-                            Grow to Epiphytic Tropical Plants
-                          </a>
-                        </h6>
-                        <p class="date">7 March, 2022</p>
-                      </div>
-                    </div>
-                    <div class="post">
-                      <div class="image">
-                        <a href="./blogdetail.html">
-                          <img src="./assets/images/blog-grid-2.webp" alt="" />
-                        </a>
-                      </div>
-                      <div class="content">
-                        <h6 class="title">
-                          <a href="./blogdetail.html">
-                            Grow to Epiphytic Tropical Plants
-                          </a>
-                        </h6>
-                        <p class="date">7 March, 2022</p>
-                      </div>
-                    </div>
 
-                    <div class="post">
+                <div class="widget top-products">
+                  <h4 class="widget-title">Top Products</h4>
+                  <div class="products">
+                    <div class="product">
                       <div class="image">
-                        <a href="./blogdetail.html">
-                          <img src="./assets/images/blog-grid-3.webp" alt="" />
+                        <a href="./productdetail.html">
+                          <img src="./assets/images/product-1.webp" alt="" />
                         </a>
                       </div>
                       <div class="content">
                         <h6 class="title">
-                          <a href="./blogdetail.html">
-                            Grow to Epiphytic Tropical Plants
+                          <a href="./productdetail.html">
+                            Here is a Quick Cure for the Book
                           </a>
                         </h6>
-                        <p class="date">7 March, 2022</p>
+                        <p class="price"><span>$</span>50</p>
                       </div>
                     </div>
-                    <div class="post">
+                    <div class="product">
                       <div class="image">
-                        <a href="./blogdetail.html">
-                          <img src="./assets/images/blog-grid-4.webp" alt="" />
+                        <a href="./productdetail.html">
+                          <img src="./assets/images/product-2.webp" alt="" />
                         </a>
                       </div>
                       <div class="content">
                         <h6 class="title">
-                          <a href="./blogdetail.html">
-                            Grow to Epiphytic Tropical Plants
+                          <a href="./productdetail.html">
+                            Here is a Quick Cure for the Book
                           </a>
                         </h6>
-                        <p class="date">7 March, 2022</p>
+                        <p class="price"><span>$</span>70</p>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div class="widget archives-widget">
-                  <h4 class="widget-title">Archives</h4>
-                  <ul>
-                    <li class="arc-item">
-                      <a href="">January</a>
-                      (3)
-                    </li>
-                    <li class="arc-item">
-                      <a href="">February</a>
-                      (1)
-                    </li>
-                    <li class="arc-item">
-                      <a href="">March</a>
-                      (2)
-                    </li>
-                    <li class="arc-item">
-                      <a href="">April</a>
-                      (5)
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="widget tags">
-                  <h4 class="widget-title">Tags</h4>
-                  <div class="all-tags">
-                    <a href="">Food</a>
-                    <a href="">Business</a>
-                    <a href="">News</a>
-                    <a href="">Strategy</a>
-                    <a href="">Best Seller</a>
-                    <a href="">Detective</a>
-                    <a href="">Action</a>
+                    <div class="product">
+                      <div class="image">
+                        <a href="./productdetail.html">
+                          <img src="./assets/images/product-3.webp" alt="" />
+                        </a>
+                      </div>
+                      <div class="content">
+                        <h6 class="title">
+                          <a href="./productdetail.html">
+                            Here is a Quick Cure for the Book
+                          </a>
+                        </h6>
+                        <p class="price"><span>$</span>40</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -723,7 +925,7 @@
           </div>
         </div>
       </section>
-      <!-- Blog Detail Section Ends -->
+      <!-- Shop Detail Section Ends -->
     </main>
     <!-- main ends -->
 
@@ -887,7 +1089,7 @@
     ></script>
 
     <script src="./assets/js/layout.js"></script>
-    <script src="./assets/js/blogdetail.js"></script>
+    <script src="./assets/js/shop.js"></script>
     <!-- scripts ends -->
   </body>
 </html>
