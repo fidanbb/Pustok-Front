@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css" />
 
     <link rel="stylesheet" href="./assets/css/pages/layout.css" />
     <link rel="stylesheet" href="./assets/css/pages/shop.css" />
@@ -125,15 +127,19 @@
                     <a href="register.html">Register</a>
                   </div>
                   <div class="cart-item d-flex align-items-center">
-                    <div class="cart-total">
-                      <span class="count">1</span>
-                      <span class="text"> Shopping Cart </span>
-                      <span class="price">
-                        <span>£</span> 0.00
-                        <span><i class="fas fa-chevron-down"></i></span>
-                      </span>
-                    </div>
+                    <a class="cart-widget" href="./cart.html">
+                      <div class="cart-total">
+                        <span class="count">1</span>
+                        <span class="text"> Shopping Cart </span>
+                        <span class="price">
+                          <span>£</span> 0.00
+                          <span><i class="fas fa-chevron-down"></i></span>
+                        </span>
+                      </div>
+                    </a>
+                   
                     <div class="cart-dropdown">
+                      <p class="cart-empty d-none">Your shopping cart is empty!</p>
                       <div class="single-cart-block">
                         <div class="cart-product">
                           <a href="productdetail.html">
@@ -429,7 +435,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -470,7 +476,7 @@
                             <a href="">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -511,7 +517,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -551,7 +557,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -591,7 +597,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -632,7 +638,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -672,7 +678,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -712,7 +718,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -753,7 +759,7 @@
                             <a href="wishlist.html">
                               <i class="fas fa-heart"></i>
                             </a>
-                            <a href="">
+                            <a class="open-modal" href="">
                               <i class="fas fa-eye"></i>
                             </a>
                           </div>
@@ -926,6 +932,91 @@
         </div>
       </section>
       <!-- Shop Detail Section Ends -->
+
+        <!-- Product Detail Modal Section Starts -->
+    <section id="product-detail-modal">
+      <div class="container">
+        <div class="detail-modal d-none">
+          <div class="close-modal">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6 mb-5 mb-lg-0">
+                <div class="product-image">
+                  <img src="./assets/images/product-1.webp" alt="" />
+                  <img src="./assets/images/product-2.webp" alt="" />
+                </div>
+                <div class="slider-nav-thumbnails">
+                  <img src="./assets/images/product-1.webp" alt="" />
+                  <img src="./assets/images/product-2.webp" alt="" />
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="product-content">
+                  <h1 class="product-name">
+                    In 10 Minutes, I'll Give You The Truth About
+                  </h1>
+                  <div class="price">
+                    <span class="actial-price">$50</span>
+                    <del class="discount-price">$80</del>
+                  </div>
+
+                  <div class="review">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span>2 reviews</span>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+
+                  <div class="add-to-cart">
+                    <div class="quantity">
+                      <span class="minus">
+                        <i class="fa-solid fa-minus"></i>
+                      </span>
+                      <span class="num">1</span>
+                      <span class="plus">
+                        <i class="fa-solid fa-plus"></i>
+                      </span>
+                    </div>
+                    <button type="submit">Add to cart</button>
+                  </div>
+
+                  <div class="product-extra-buttons">
+                    <div class="add-to-wishlist">
+                      <i class="fa-regular fa-heart"></i>
+                      <span>Add to Wishlist</span>
+                    </div>
+                    <a href="">
+                      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                      Share this Product
+                    </a>
+                  </div>
+
+                  <div class="product-meta">
+                    <p>SKU: <span>BE45VGRT</span></p>
+                    <p>Categories: <span>adventure, children</span></p>
+                    <p>Tags: <span>news, strategy, bestseller</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="modal-overlay d-none"></div>
+      </div>
+</section>
+<!-- Product Detail Modal Section Ends -->
     </main>
     <!-- main ends -->
 
@@ -1023,22 +1114,22 @@
                   <h3>Stay Connected</h3>
                   <ul>
                     <li>
-                      <a href="">
+                      <a href="https://www.facebook.com/" target="_blank">
                         <i class="ion ion-social-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://twitter.com/" target="_blank">
                         <i class="ion ion-social-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://www.google.com/" target="_blank">
                         <i class="ion ion-social-google"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://www.youtube.com/" target="_blank">
                         <i class="ion ion-social-youtube"></i>
                       </a>
                     </li>
@@ -1069,6 +1160,11 @@
     </footer>
     <!-- footer ends -->
 
+       <!-- scroll up button -->
+       <button class="scrolltop" type="button" style="display: inline-block;">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
     <!-- scripts starts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -1087,7 +1183,8 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.js"></script>
     <script src="./assets/js/layout.js"></script>
     <script src="./assets/js/shop.js"></script>
     <!-- scripts ends -->

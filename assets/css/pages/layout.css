@@ -1,5 +1,5 @@
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 ul {
@@ -181,11 +181,14 @@ body {
   line-height: 1;
   margin-right: 11px;
 }
-#all-header #comp-header #header-below .cart-part .cart-item .cart-total {
+#all-header #comp-header #header-below .cart-part .cart-item .cart-widget {
+  color: #333;
+}
+#all-header #comp-header #header-below .cart-part .cart-item .cart-widget .cart-total {
   position: relative;
   cursor: pointer;
 }
-#all-header #comp-header #header-below .cart-part .cart-item .cart-total .count {
+#all-header #comp-header #header-below .cart-part .cart-item .cart-widget .cart-total .count {
   display: inline-block;
   border-radius: 50%;
   width: 23px;
@@ -200,12 +203,12 @@ body {
   right: -25px;
   top: -8px;
 }
-#all-header #comp-header #header-below .cart-part .cart-item .cart-total .text {
+#all-header #comp-header #header-below .cart-part .cart-item .cart-widget .cart-total .text {
   display: block;
   margin-bottom: 2px;
   line-height: 1;
 }
-#all-header #comp-header #header-below .cart-part .cart-item .cart-total .price {
+#all-header #comp-header #header-below .cart-part .cart-item .cart-widget .cart-total .price {
   display: block;
   color: #62ab00;
   font-style: normal;
@@ -214,7 +217,7 @@ body {
   font-size: 18px;
   line-height: 1;
 }
-#all-header #comp-header #header-below .cart-part .cart-item .cart-total .price i {
+#all-header #comp-header #header-below .cart-part .cart-item .cart-widget .cart-total .price i {
   color: #333;
   font-size: 12px;
   margin-left: 5px;
@@ -233,6 +236,13 @@ body {
   position: absolute;
   z-index: 800;
   transition: all 0.4s;
+}
+#all-header #comp-header #header-below .cart-part .cart-item .cart-dropdown .cart-empty {
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
 }
 #all-header #comp-header #header-below .cart-part .cart-item .cart-dropdown .single-cart-block {
   overflow-y: scroll;
@@ -557,6 +567,17 @@ body {
   opacity: 1 !important;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 footer {
   margin-top: 60px;
 }
@@ -703,6 +724,123 @@ footer #footer-down p:nth-of-type(2) {
 footer #footer-down p a {
   color: #62ab00;
   text-decoration: none;
+}
+
+.scrolltop {
+  outline: none !important;
+  position: fixed;
+  z-index: 2147483647;
+  bottom: 80px;
+  right: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #ebebeb;
+  color: #292929;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  transition: all 0.5s;
+}
+.scrolltop:hover {
+  background-color: #62ab00;
+  border: 2px solid #62ab00;
+  color: #fff;
+}
+.added-item-wishlist {
+  display: none;
+  text-align: left;
+  width: 360px;
+  font-size: 14px;
+  right: 0;
+  border: 2px solid #eee;
+  background: #63ab00;
+  opacity: 0.9;
+  top: 100%;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  z-index: 90000000;
+  transition: all 0.4s;
+}
+.added-item-wishlist p {
+  opacity: 0.9;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.added-item-wishlist p i {
+  font-weight: 900;
+  font-size: 25px;
+  margin-right: 7px;
+}
+
+.remove-item-wishlist {
+  display: none;
+  text-align: left;
+  width: 360px;
+  font-size: 14px;
+  right: 0;
+  border: 2px solid #eee;
+  background: #5cadd0;
+  opacity: 0.9;
+  top: 100%;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  z-index: 90000000;
+  transition: all 0.4s;
+}
+.remove-item-wishlist p {
+  opacity: 0.9;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.remove-item-wishlist p i {
+  font-weight: 900;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.added-item-basket {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 360px;
+  font-size: 14px;
+  right: 0;
+  border: 2px solid #eee;
+  background: #63ab00;
+  opacity: 0.9;
+  top: 100%;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  z-index: 90000000;
+  transition: all 0.4s;
+}
+.added-item-basket p {
+  opacity: 0.9;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.added-item-basket i {
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+  margin-right: 15px;
 }
 
 @media only screen and (max-width: 600px) {

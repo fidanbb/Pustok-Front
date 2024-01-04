@@ -96,6 +96,7 @@ main #product-detail .product .product-content .add-to-cart button {
   height: 3rem;
   border-radius: 2px;
   background-color: #63ab00;
+  outline: none !important;
   border-color: transparent;
   color: #fff;
   font-size: 15px;

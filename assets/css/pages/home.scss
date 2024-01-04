@@ -9,6 +9,10 @@ body {
   font-family: "Open-Sans", sans-serif;
 }
 
+.modal-is-open {
+  overflow: hidden;
+}
+
 main {
   #slider-section {
     margin-top: 20px;
@@ -1731,6 +1735,230 @@ main {
       }
     }
   }
+
+  #product-detail-modal {
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 1001;
+    }
+
+    .detail-modal {
+      z-index: 1002;
+      background-color: white;
+      border-radius: 5px;
+      width: 60%;
+      height: calc(100% - 200px);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      padding: 50px 30px 10px 30px;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      overflow-y: auto;
+
+      .close-modal {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 10px;
+        right: 20px;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        cursor: pointer;
+      }
+      .modal-content {
+        border: none;
+        .product-image {
+          img {
+            width: 100%;
+          }
+        }
+
+        .product-content {
+          h1 {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+          .review {
+            margin-top: 0.625rem;
+            margin-bottom: 0.9375rem;
+            display: flex;
+            align-items: center;
+            .stars {
+              margin-right: 10px;
+              i {
+                font-size: 12px;
+                color: #f9c300;
+                margin-right: -2px;
+              }
+            }
+
+            span {
+              font-size: 0.8125rem;
+              font-weight: 600;
+            }
+          }
+          .price {
+            span {
+              font-size: 20px;
+              font-weight: 600;
+              margin: 0 0;
+              padding: 0 0;
+              color: #63ab00;
+            }
+            .discount-price {
+              margin-left: 5px;
+              color: #333;
+            }
+          }
+
+          p {
+            margin-top: 0.9375rem;
+            margin-bottom: 10px;
+            font-size: 0.875rem;
+          }
+
+          .add-to-cart {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            .quantity {
+              display: flex;
+              align-items: center;
+
+              margin-right: 7px !important;
+              border: 1px solid #eee;
+              height: 3rem;
+              span {
+                font-weight: 400;
+                i {
+                  font-size: 15px !important;
+                }
+              }
+              .num {
+                padding-left: 3px;
+                padding-right: 3px;
+              }
+              .minus {
+                cursor: pointer;
+                display: flex;
+                width: 40px;
+                padding-right: 15px;
+                padding-left: 15px;
+              }
+
+              .plus {
+                cursor: pointer;
+                width: 40px;
+                padding-left: 15px;
+                padding-right: 15px;
+              }
+            }
+
+            button {
+              cursor: pointer;
+              font-weight: 600;
+              height: 3rem;
+              border-radius: 2px;
+              outline: none !important;
+              background-color: #63ab00;
+              border-color: transparent;
+              color: #fff;
+              font-size: 15px;
+              width: 100%;
+            }
+          }
+
+          .product-extra-buttons {
+            margin-top: 1.25rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #dee0ea;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a {
+              font-size: 0.875rem;
+              color: #000;
+              i {
+                margin-right: 5px;
+              }
+            }
+            .add-to-wishlist {
+              cursor: pointer;
+              i {
+                opacity: 0.5;
+                font-size: 0.875rem;
+                color: #000;
+              }
+              span {
+                opacity: 0.5;
+                font-size: 0.875rem;
+                color: #000;
+              }
+            }
+          }
+
+          .product-meta {
+            p {
+              font-size: 14px;
+              margin: 5px 0;
+              padding: 0 0;
+
+              span {
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: capitalize;
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: -40px !important;
+      }
+    }
+
+    .slider-nav-thumbnails {
+      margin-top: 20px;
+
+      img {
+      }
+    }
+
+    .slick-slide {
+      margin-right: 20px;
+    }
+
+    .slick-track {
+    }
+    .slider-nav-thumbnails .slick-slide {
+      opacity: 0.5;
+    }
+
+    .slider-nav-thumbnails .slick-slide.slick-current.slick-active {
+      opacity: 1;
+      background: green;
+      // border: 1px solid #000;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1840,6 +2068,11 @@ main {
       }
     }
   }
+  #product-detail-modal {
+    .detail-modal {
+      width: 100% !important;
+    }
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -1914,6 +2147,11 @@ main {
       }
     }
   }
+  #product-detail-modal {
+    .detail-modal {
+      width: 60% !important;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -1966,6 +2204,11 @@ main {
       }
     }
   }
+  #product-detail-modal {
+    .detail-modal {
+      width: 60% !important;
+    }
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -2005,6 +2248,11 @@ main {
       }
     }
   }
+  #product-detail-modal {
+    .detail-modal {
+      width: 60% !important;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -2015,6 +2263,12 @@ main {
           padding-bottom: 80px !important;
         }
       }
+    }
+  }
+
+  #product-detail-modal {
+    .detail-modal {
+      width: 60% !important;
     }
   }
 }

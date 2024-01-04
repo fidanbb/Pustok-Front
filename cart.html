@@ -124,15 +124,21 @@
                     <a href="register.html">Register</a>
                   </div>
                   <div class="cart-item d-flex align-items-center">
-                    <div class="cart-total">
-                      <span class="count">1</span>
-                      <span class="text"> Shopping Cart </span>
-                      <span class="price">
-                        <span>£</span> 0.00
-                        <span><i class="fas fa-chevron-down"></i></span>
-                      </span>
-                    </div>
+                    <a class="cart-widget" href="./cart.html">
+                      <div class="cart-total">
+                        <span class="count">1</span>
+                        <span class="text"> Shopping Cart </span>
+                        <span class="price">
+                          <span>£</span> 0.00
+                          <span><i class="fas fa-chevron-down"></i></span>
+                        </span>
+                      </div>
+                    </a>
+
                     <div class="cart-dropdown">
+                      <p class="cart-empty d-none">
+                        Your shopping cart is empty!
+                      </p>
                       <div class="single-cart-block">
                         <div class="cart-product">
                           <a href="productdetail.html">
@@ -623,22 +629,22 @@
                   <h3>Stay Connected</h3>
                   <ul>
                     <li>
-                      <a href="">
+                      <a href="https://www.facebook.com/" target="_blank">
                         <i class="ion ion-social-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://twitter.com/" target="_blank">
                         <i class="ion ion-social-twitter"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://www.google.com/" target="_blank">
                         <i class="ion ion-social-google"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="">
+                      <a href="https://www.youtube.com/" target="_blank">
                         <i class="ion ion-social-youtube"></i>
                       </a>
                     </li>
@@ -668,6 +674,11 @@
       </section>
     </footer>
     <!-- footer ends -->
+
+    <!-- scroll up button -->
+    <button class="scrolltop" type="button" style="display: inline-block">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- scripts starts -->
     <script

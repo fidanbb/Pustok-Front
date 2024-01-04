@@ -1,0 +1,91 @@
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Open-Sans", sans-serif;
+}
+
+main #error-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+main #error-section .error {
+  font-size: 180px;
+  animation: shake 1s infinite linear;
+  font-weight: 900;
+  color: #63ab00;
+  letter-spacing: 20px;
+  text-shadow: 1px 1px 1px #197675, 2px 2px 1px #197675, 3px 3px 1px #197675, 4px 4px 1px #197675, 5px 5px 1px #197675, 6px 6px 1px #197675, 7px 7px 1px #197675, 8px 8px 1px #197675, 25px 25px 8px rgba(0, 0, 0, 0.2);
+}
+@keyframes shake {
+  0% {
+    transform: skew(-1deg);
+  }
+  10% {
+    transform: skew(5deg);
+  }
+  30% {
+    transform: skew(-3deg);
+  }
+  40% {
+    transform: skew(4deg);
+  }
+  50% {
+    transform: skew(3deg);
+  }
+  60% {
+    transform: skew(3deg);
+  }
+  70% {
+    transform: skew(-3deg);
+  }
+  80% {
+    transform: skew(-2deg);
+  }
+  90% {
+    transform: skew(-2deg);
+  }
+}
+main #error-section .page {
+  margin: 2rem 0;
+  font-size: 30px;
+  font-weight: 600;
+  color: #444;
+}
+main #error-section .back-home {
+  display: inline-block;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.75rem 1rem 0.6rem;
+  transition: all 0.2s linear;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+}
+main #error-section .back-home:hover {
+  background: #63ab00;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #error-section {
+    text-align: center;
+  }
+  #error-section .error {
+    font-size: 100px !important;
+  }
+  #error-section .page {
+    font-size: 20px !important;
+  }
+  #error-section .back-home {
+    padding: 0.75rem 1rem 0.6rem;
+  }
+}/*# sourceMappingURL=error.css.map */
