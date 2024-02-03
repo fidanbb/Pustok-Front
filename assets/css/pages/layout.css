@@ -403,39 +403,69 @@ body {
   visibility: visible !important;
   opacity: 1 !important;
 }
-#all-header #mobile-header .menu-btns ul {
+#all-header #mobile-header .menu-btns {
+  position: relative;
+}
+#all-header #mobile-header .menu-btns .header-links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 0 0;
   margin: 0 0;
 }
-#all-header #mobile-header .menu-btns ul li {
+#all-header #mobile-header .menu-btns .header-links li {
   font-size: 30px;
   margin: 0px 20px 0 0;
 }
-#all-header #mobile-header .menu-btns ul li:first-child a {
+#all-header #mobile-header .menu-btns .header-links li:nth-of-type(1) i {
+  color: #000;
+  font-size: 25px;
+}
+#all-header #mobile-header .menu-btns .header-links li:nth-of-type(2) a {
   color: black;
 }
-#all-header #mobile-header .menu-btns ul li:first-child a i::before {
+#all-header #mobile-header .menu-btns .header-links li:nth-of-type(2) a i::before {
   content: "\f110";
   font-family: Ionicons;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
 }
-#all-header #mobile-header .menu-btns ul li:last-child {
+#all-header #mobile-header .menu-btns .header-links li:nth-of-type(3) {
   margin-right: 0;
 }
-#all-header #mobile-header .menu-btns ul li:last-child a {
+#all-header #mobile-header .menu-btns .header-links li:nth-of-type(3) a {
   color: black;
-  width: 33px;
-  height: 33px;
   font-size: 34px;
-  border-color: #fff;
 }
-#all-header #mobile-header .menu-btns ul li:last-child a i::before {
+#all-header #mobile-header .menu-btns .header-links li:nth-of-type(3) a i::before {
   content: "\f20e";
+}
+#all-header #mobile-header .menu-btns .user-menu {
+  flex-direction: column;
+  z-index: 10000;
+  top: 55px;
+  left: 35px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: auto;
+  padding: 10px 20px 10px 15px;
+  margin: 0 0;
+  transition: all 0.5s;
+}
+#all-header #mobile-header .menu-btns .user-menu li {
+  text-align: left !important;
+  margin-top: 5px;
+  font-size: 18px !important;
+}
+#all-header #mobile-header .menu-btns .user-menu li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+#all-header #mobile-header .menu-btns .user-menu li a:hover {
+  color: #62ab00 !important;
 }
 #all-header #mobile-header #sidebar {
   width: 300px;
@@ -851,6 +881,12 @@ footer #footer-down p a {
     margin-top: 30px;
     max-width: 100% !important;
   }
+  #mobile-header .user-menu {
+    left: 0px !important;
+  }
+  #mobile-header .user-menu li {
+    font-size: 18px !important;
+  }
 }
 @media only screen and (min-width: 600px) {
   #comp-header {
@@ -860,6 +896,12 @@ footer #footer-down p a {
     margin-top: 30px;
     max-width: 100% !important;
   }
+  #mobile-header .user-menu {
+    left: 35px !important;
+  }
+  #mobile-header .user-menu li {
+    font-size: 18px !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   #comp-header {
@@ -868,6 +910,12 @@ footer #footer-down p a {
   .category-nav {
     margin-top: 0px !important;
     max-width: 100% !important;
+  }
+  #mobile-header .user-menu {
+    left: 0px !important;
+  }
+  #mobile-header .user-menu li {
+    font-size: 18px !important;
   }
 }
 @media only screen and (min-width: 992px) {

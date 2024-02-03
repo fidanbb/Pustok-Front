@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   text-decoration: none !important;
 }
@@ -376,31 +377,29 @@ main #description-review-section .add-review .review-form .stars input {
   display: none;
 }
 main #description-review-section .add-review .review-form .stars label {
-  margin-right: 5px;
   cursor: pointer;
   position: relative;
   margin-bottom: 20px;
   display: inline-block;
 }
 main #description-review-section .add-review .review-form .stars label::before {
-  content: "\f005";
-  font-family: "Font Awesome 5 Free";
-  position: relative;
-  display: block;
-  font-size: 14px;
+  content: "★";
+  font-size: 24px;
   color: #e3e3e3;
-  font-weight: 900;
 }
 main #description-review-section .add-review .review-form .stars label::after {
-  content: "\f005";
-  font-family: "Font Awesome 5 Free";
-  position: absolute;
-  display: block;
-  font-size: 14px;
+  content: "★";
+  font-size: 24px;
   color: #f9c300;
-  font-weight: 900;
+  position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+main #description-review-section .add-review .review-form .stars label.hover::after,
+main #description-review-section .add-review .review-form .stars label.selected::after {
+  opacity: 1;
 }
 main #description-review-section .add-review .review-form input {
   margin-bottom: 20px;
@@ -417,6 +416,20 @@ main #description-review-section .add-review .review-form textarea {
 main #description-review-section .add-review .review-form textarea:focus {
   border-color: #62ab00;
   outline: none;
+}
+main #description-review-section .add-review .review-form a {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 17px;
+  padding: 12.5px 40px;
+  line-height: 1.5;
+  height: 48px;
+  background-color: #63ab00;
+  color: #fff;
+  transition: all 0.5s;
+}
+main #description-review-section .add-review .review-form a:hover {
+  opacity: 0.8;
 }
 main #description-review-section .add-review .review-form button {
   margin-top: 20px;

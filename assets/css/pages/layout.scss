@@ -445,7 +445,8 @@ body {
     }
 
     .menu-btns {
-      ul {
+      position: relative;
+     .header-links {
         display: flex;
         align-items: center;
         justify-content: flex-end;
@@ -455,7 +456,20 @@ body {
           font-size: 30px;
           margin: 0px 20px 0 0;
 
-          &:first-child {
+          &:nth-of-type(1){
+          
+
+              i{
+                color: #000;
+                font-size: 25px;
+              }
+
+              
+             
+       
+          }
+
+          &:nth-of-type(2) {
             a {
               color: black;
               i {
@@ -470,19 +484,48 @@ body {
             }
           }
 
-          &:last-child {
+          &:nth-of-type(3) {
             margin-right: 0;
             a {
               color: black;
-              width: 33px;
-              height: 33px;
+           
               font-size: 34px;
-              border-color: #fff;
               i {
                 &::before {
                   content: "\f20e";
                 }
               }
+            }
+          }
+        }
+      }
+
+      .user-menu {
+        flex-direction: column;
+        z-index: 10000;
+        top:55px;
+        left: 35px;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ddd;
+        width: auto;
+        padding: 10px 20px 10px 15px;
+        margin: 0 0;
+        transition: all 0.5s;
+        li {
+          text-align: left!important;
+          margin-top: 5px;
+ 
+        
+          font-size: 18px!important;
+          a {
+          
+
+            color: #000;
+            text-decoration: none;
+            transition: all 0.5s;
+            &:hover {
+              color: #62ab00 !important;
             }
           }
         }
@@ -935,6 +978,7 @@ footer {
   }
 }
 
+
 @media only screen and (max-width: 600px) {
   #comp-header {
     display: none;
@@ -943,6 +987,17 @@ footer {
     .category-nav {
       margin-top: 30px;
       max-width: 100% !important;
+    }
+
+    .user-menu {
+
+      left: 0px!important;
+    
+      li {
+  
+        font-size: 18px!important;
+       
+      }
     }
   }
 }
@@ -957,6 +1012,17 @@ footer {
       margin-top: 30px;
       max-width: 100% !important;
     }
+
+    .user-menu {
+
+      left: 35px!important;
+    
+      li {
+  
+        font-size: 18px!important;
+       
+      }
+    }
   }
 }
 
@@ -968,6 +1034,20 @@ footer {
     margin-top: 0px !important;
     max-width: 100% !important;
   }
+  #mobile-header {
+
+    .user-menu {
+
+      left: 0px!important;
+    
+      li {
+  
+        font-size: 18px!important;
+       
+      }
+    }
+  }
+ 
 }
 
 @media only screen and (min-width: 992px) {
@@ -977,5 +1057,6 @@ footer {
 
   #mobile-header {
     display: none;
+
   }
 }

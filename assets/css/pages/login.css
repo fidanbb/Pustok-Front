@@ -69,6 +69,7 @@ main #login-section .login-form .password {
   position: relative;
 }
 main #login-section .login-form .password i {
+  cursor: pointer;
   position: absolute;
   top: 40px;
   right: 20px;

@@ -72,7 +72,9 @@ main {
       .password {
         position: relative;
         i {
+          cursor: pointer;
           position: absolute;
+          
           top: 40px;
           right: 20px;
           transition: all 0.5s;

@@ -279,6 +279,20 @@ main {
             outline: none;
           }
         }
+        a{
+          margin-top: 20px;
+          text-align: center;
+          font-size: 17px;
+          padding: 12.5px 40px;
+          line-height: 1.5;
+          height: 48px;
+          background-color: #63ab00;
+          color: #fff;
+          transition: all 0.5s;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
         button {
           margin-top: 20px;
           text-align: center;
